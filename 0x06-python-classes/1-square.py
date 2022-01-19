@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+An empty square class
+"""
+
+
 class Square():
     def __init__(self, size):
         """Initialization of instance attributes
