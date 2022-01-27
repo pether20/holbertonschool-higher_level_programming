@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" queens puzzle """
+"""
+queens puzzle
+"""
 
 
 from sys import argv
