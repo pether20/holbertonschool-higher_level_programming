@@ -3,6 +3,6 @@
 
 
 def from_json_string(my_str):
-    """Methode json to string"""
+    """Methode from json to string"""
     import json
     return json.loads(my_str)
