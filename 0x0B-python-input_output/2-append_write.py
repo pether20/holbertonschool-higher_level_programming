@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" task 01 read file"""
+"""
+task 01 read file
+"""
 
 
 def append_write(filename="", text=""):
