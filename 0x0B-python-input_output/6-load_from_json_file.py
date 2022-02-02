@@ -5,6 +5,5 @@
 def load_from_json_file(filename):
     """Methode load fron json file"""
     import json
-    with open(filename, 'w', encoding="UTF8") as f:
+    with open(filename, "r", encoding="UTF8") as f:
         return json.load(f)
-
