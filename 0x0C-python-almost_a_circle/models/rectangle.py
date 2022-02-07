@@ -72,4 +72,3 @@ class Rectangle(Base):
             for j in range(self.width):
                 print(f'#', end='')
             print()
-            
