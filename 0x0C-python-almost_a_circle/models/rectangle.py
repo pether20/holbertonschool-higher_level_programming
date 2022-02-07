@@ -70,5 +70,6 @@ class Rectangle(Base):
         """Methode print instance"""
         for i in range(self.height):
             for j in range(self.width):
-                print(f'#',end='')
+                print(f'#', end='')
             print()
+            
