@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ FUNCTION RECTANGLE """
+from unicodedata import name
 from models.base import Base
 
 
@@ -72,3 +73,10 @@ class Rectangle(Base):
             for j in range(self.width):
                 print(f'#', end='')
             print()
+
+    def __str__(self):
+        """Print """
+        nm = self.__class__.__name__
+        ide, ex = self.id, self.__x
+        ye, an, al = self.__y, self.__width, self.__height
+        return f"[{nm}] ({ide}) {ex}/{ye} - {an}/{al}"
