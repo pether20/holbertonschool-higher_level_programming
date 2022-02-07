@@ -2,7 +2,7 @@
 """ FUNCTION BASE """
 
 
-class Base:
+class Base():
     """
      Class Base
     """
