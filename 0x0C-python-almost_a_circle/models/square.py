@@ -49,4 +49,3 @@ class Square(Rectangle):
         key_list = ["id", "size", "x", "y"]
         value_list = [self.id, self.width, self.x, self.y]
         return dict(zip(key_list, value_list))
-        
