@@ -82,10 +82,7 @@ class Rectangle(Base):
         return f"[{nm}] ({ide}) {ex}/{ye} - {an}/{al}"
 
     def update(self, *args, **kwargs):
-        """
-        If args: set attributes in this order: id, width, height, x, y
-        If no args given: set attributes according to kwargs
-        """
+        """Update"""
         if args:
             for k, v in enumerate(args):
                 if k == 0:
@@ -119,4 +116,3 @@ class Rectangle(Base):
         d["x"] = self.x
         d["y"] = self.y
         return d
-        
