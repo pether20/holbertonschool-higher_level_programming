@@ -70,8 +70,9 @@ class Rectangle(Base):
 
     def display(self):
         """Methode print instance"""
-        print("\n" * self.y + "\n".join(" " * self.x + "#" * self.width for i in range(self.height)))
-        
+        ex, ye = self.x, self.y
+        an, al = self.width, self.height
+        print("\n" * ye + "\n".join(" " * ex + "#" * an for i in range(al)))
 
     def __str__(self):
         """Print """
