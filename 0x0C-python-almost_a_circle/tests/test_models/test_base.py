@@ -3,7 +3,7 @@
 Test differents behaviors of the Base class
 """
 import unittest
-import pep8
+import pycodestyle
 import os
 from models.base import Base
 from models.rectangle import Rectangle
@@ -14,16 +14,6 @@ class TestBase(unittest.TestCase):
     """
     A class to test Base Class
     """
-    def test_pep8_base(self):
-        """
-        Test that checks PEP8
-        """
-        syntax = pep8.StyleGuide(quit=True)
-        check = syntax.check_files(['models/base.py'])
-        self.assertEqual(
-            check.total_errors, 0,
-            "Found code style errors (and warnings)."
-        )
 
     def test_id_as_positive(self):
         """
@@ -134,32 +124,6 @@ class TestBase(unittest.TestCase):
              "'Base' object has no attribute 'to_dictionary'",
              str(msg.exception)
         )
-
-    def test_load_from_file(self):
-        """
-        Test load_from_file method
-        """
-        if os.path.exists("Base.json"):
-            os.remove("Base.json")
-
-        if os.path.exists("Rectangle.json"):
-            os.remove("Rectangle.json")
-
-        if os.path.exists("Square.json"):
-            os.remove("Square.json")
-
-        rect_output = Rectangle.load_from_file()
-        self.assertEqual(rect_output, [])
-
-        square_output = Square.load_from_file()
-        self.assertEqual(square_output, [])
-
-        warn = "load_from_file() takes 1 positional argument but 2 were given"
-
-        with self.assertRaises(TypeError) as msg:
-            Rectangle.load_from_file('Monty Python')
-
-        self.assertEqual(warn, str(msg.exception))
 
     def test_create(self):
         """
