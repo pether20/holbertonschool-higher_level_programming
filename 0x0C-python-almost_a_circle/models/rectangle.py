@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ FUNCTION RECTANGLE """
+from time import sleep
 from unicodedata import name
 from models.base import Base
 
@@ -69,10 +70,8 @@ class Rectangle(Base):
 
     def display(self):
         """Methode print instance"""
-        for i in range(self.height):
-            for j in range(self.width):
-                print(f'#', end='')
-            print()
+        print("\n" * self.y + "\n".join(" " * self.x + "#" * self.width for i in range(self.height)))
+        
 
     def __str__(self):
         """Print """
