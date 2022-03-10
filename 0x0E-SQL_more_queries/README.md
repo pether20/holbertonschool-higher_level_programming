@@ -2,7 +2,7 @@
 <img src="https://assets.website-files.com/6105315644a26f77912a1ada/610540e8b4cd6969794fe673_Holberton_School_logo-04-04.svg" height="50%" width="40%">
 </h1>
 
-# 💾 0x0D. SQL - Introduction ✏️
+# 💾 0x0E. SQL - More queries ✏️
 
 ### 🖋️ Concepts
 >For this project, students are expected to look at these concepts:
@@ -23,17 +23,14 @@ First step: This is a SQL project and integration…
 ***
 
 ### 📋 General
-   * What’s a database
-*   What’s a relational database
-*   What does SQL stand for
-*   What’s MySQL
-*   How to create a database in MySQL
-*   What does DDL and DML stand for
-*   How to CREATE or ALTER a table
-*   How to SELECT data from a table
-*   How to INSERT, UPDATE or DELETE data
-*   What are subqueries
-*   How to use MySQL functions
+* How to create a new MySQL user
+* How to manage privileges for a user to a database or table
+* What’s a PRIMARY KEY
+* What’s a FOREIGN KEY
+* How to use NOT NULL and UNIQUE constraints
+* How to retrieve datas from multiple tables in one request
+* What are subqueries
+* What are JOIN and UNION
 
 ### 📂 files
 ***
